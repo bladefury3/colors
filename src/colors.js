@@ -1,5 +1,5 @@
 $(function() {
-	$.getJSON("colors.json", function(json) {    
+	$.getJSON("http://www.googledrive.com/host/0B5GfovZyXtVBdktKdHhaYUxNcVU.json", function(json) {    
 		$('#iOS').html(iOSCode(json));
 		$('#android').html(androidCode(json));
 		$('#web').html(webCode(json));
@@ -8,7 +8,7 @@ $(function() {
 			var data = [];
 		    var sketch = '{"compatibleVersion":"1.0","pluginVersion":"1.1","colors":[';
 		    $.each(json, function(i, item) {				    	
-		    	color = '"#'+item+'"';
+		    	color = '"#'+item.toUpperCase()+'"';
 	    	    data.push(color);
 		    });
 		    sketch += data.join();
@@ -46,7 +46,7 @@ $(function() {
 		});	
 		return web;
 	}	
-	
+
 	new Clipboard('.btn');
 });
 
