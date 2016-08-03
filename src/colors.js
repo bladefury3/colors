@@ -1,5 +1,5 @@
 $(function() {
-	$.getJSON("http://www.googledrive.com/host/0B5GfovZyXtVBdktKdHhaYUxNcVU.json", function(json) {    
+	$.getJSON("colors.json", function(json) {    
 		$('#iOS').html(iOSCode(json));
 		$('#android').html(androidCode(json));
 		$('#web').html(webCode(json));
