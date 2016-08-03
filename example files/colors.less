@@ -1,0 +1,382 @@
+/*
+* COLORS
+*
+* Global color variables
+*
+*/
+
+
+/////////////////////////////////////
+////////// COLOR VARIABLES //////////
+/////////////////////////////////////
+
+// define the actual HSL values of colors throughout the app
+
+// this is the only place where colors should be defined.
+// all other colors should be variables that reference this list
+// (or reference a variable that references this list, etc...)
+// ex: @background-color = @smoke-90, not @background-color = hsl(220, 10%, 90%)
+
+
+// LEGACY
+// TODO: refactor out these out
+
+// determine if these are helpful for gradients
+@white:     hsl(0,   0%,  100%);
+@black:     hsl(0,   0%,  0%);
+
+
+// ROY G BIV
+
+@light-red:    hsl(10,  80%, 80%);
+@red:          hsl(10,  70%, 60%);
+@dark-red:     hsl(10,  60%, 50%);
+
+@red-orange:   hsl(15,  90%, 60%);
+@orange:       hsl(30,  90%, 60%);
+
+@dark-yellow:  hsl(48,  99%, 50%);
+@yellow:       hsl(48,  99%, 70%);
+@light-yellow: hsl(48,  99%, 80%);
+
+@light-green:  hsl(135, 40%, 60%);
+@green:        hsl(135, 40%, 45%);
+@dark-green:   hsl(135, 40%, 30%);
+
+@light-blue:   hsl(210, 70%, 70%);
+@blue:         hsl(210, 70%, 50%);
+@dark-blue:    hsl(210, 70%, 30%);
+
+@purple:       hsl(300, 30%, 50%);
+@dark-purple:  hsl(300, 40%, 30%);
+
+
+// NEUTRALS
+
+// warm neutrals
+@light-tan:    hsl(30,  30%, 92%);
+@tan:          hsl(30,  30%, 85%);
+@dark-tan:     hsl(30,  30%, 60%);
+
+@light-brown:  hsl(30,  30%, 45%);
+@brown:        hsl(30,  30%, 30%);
+@dark-brown:   hsl(30,  30%, 20%);
+
+// cool neutrals
+@smoke-10:     hsl(220,   10%,  10%);
+@smoke-20:     hsl(220,   10%,  20%);
+@smoke-30:     hsl(220,   10%,  30%);
+@smoke-40:     hsl(220,   10%,  40%);
+@smoke-50:     hsl(220,   10%,  50%);
+@smoke-60:     hsl(220,   10%,  60%);
+@smoke-70:     hsl(220,   10%,  70%);
+@smoke-80:     hsl(220,   10%,  80%);
+@smoke-90:     hsl(220,   10%,  90%);
+@smoke-91:     hsl(220,   10%,  91%);
+@smoke-92:     hsl(220,   10%,  92%);
+@smoke-93:     hsl(220,   10%,  93%);
+@smoke-94:     hsl(220,   10%,  94%);
+@smoke-95:     hsl(220,   10%,  95%);
+@smoke-96:     hsl(220,   10%,  96%);
+@smoke-97:     hsl(220,   10%,  97%);
+@smoke-98:     hsl(220,   10%,  98%);
+@smoke-99:     hsl(220,   10%,  99%);
+
+
+
+// TRANSLUCENT
+// cool neutral colors w/ low opacity
+// for shadows, modal backgrounds, etc
+
+@clear-smoke-01: hsla(220, 10%, 20%, .01);
+@clear-smoke-02: hsla(220, 10%, 20%, .02);
+@clear-smoke-03: hsla(220, 10%, 20%, .03);
+@clear-smoke-04: hsla(220, 10%, 20%, .04);
+@clear-smoke-05: hsla(220, 10%, 20%, .05);
+@clear-smoke-10: hsla(220, 10%, 20%, .10);
+@clear-smoke-20: hsla(220, 10%, 20%, .20);
+@clear-smoke-30: hsla(220, 10%, 20%, .30);
+@clear-smoke-40: hsla(220, 10%, 20%, .40);
+@clear-smoke-50: hsla(220, 10%, 20%, .50);
+@clear-smoke-60: hsla(220, 10%, 20%, .60);
+@clear-smoke-70: hsla(220, 10%, 20%, .70);
+@clear-smoke-80: hsla(220, 10%, 20%, .80);
+@clear-smoke-90: hsla(220, 10%, 20%, .90);
+@clear-smoke-95: hsla(220, 10%, 20%, .95);
+
+
+// WITH TRANSPARENCY
+// our colors with transparency
+// until LESS gets fade() working
+
+@clear-green-90: hsla(135, 40%, 45%, .90);
+
+
+/////////////////////////////////////
+//////////// CROP COLORS ////////////
+/////////////////////////////////////
+
+// used for color-coding timelines, charts, map badges, etc...
+// anywhere an element is color-coded by crop
+// TODO: rename this to "background-colors"
+
+// HOW IT WORKS
+// the database has a color string attr associated with each crop
+// which is appended to "crop-color-" and used as a css class.
+// ie, crop Spinach has a color value of "dark-green" in the db,
+// so spinach crop timelines should have a class "crop-color-dark-green"
+
+// NOTE: some strange css properties below (like "fill")
+// are for styling SVG elements.
+
+
+// mixins to be used below
+.crop-color-light-on-dark {
+  text-shadow: 0 1px 0px @clear-smoke-30;
+  color: @white;
+}
+.crop-color-dark-on-light {
+  color: @text-color-primary;
+}
+
+// classes to color shapes etc
+.crop-color-white {
+  fill:       @smoke-98;
+  stroke:     @smoke-98;
+  background: @smoke-98;
+  .crop-color-dark-on-light();
+}
+.crop-color-light-red {
+  fill:       @light-red;
+  stroke:     @light-red;
+  background: @light-red;
+  .crop-color-dark-on-light();
+}
+.crop-color-red {
+  fill:       @red;
+  stroke:     @red;
+  background: @red;
+  .crop-color-light-on-dark();
+}
+.crop-color-dark-red {
+  fill:       @dark-red;
+  stroke:     @dark-red;
+  background: @dark-red;
+  .crop-color-light-on-dark();
+}
+.crop-color-red-orange {
+  fill:       @red-orange;
+  stroke:     @red-orange;
+  background: @red-orange;
+  .crop-color-light-on-dark();
+}
+.crop-color-light-tan {
+  fill:       @light-tan;
+  stroke:     @light-tan;
+  background: @light-tan;
+  .crop-color-dark-on-light();
+}
+.crop-color-tan {
+  fill:       @tan;
+  stroke:     @tan;
+  background: @tan;
+  .crop-color-dark-on-light();
+}
+.crop-color-dark-tan {
+  fill:       @dark-tan;
+  stroke:     @dark-tan;
+  background: @dark-tan;
+  .crop-color-light-on-dark();
+}
+.crop-color-light-brown {
+  fill:       @light-brown;
+  stroke:     @light-brown;
+  background: @light-brown;
+  .crop-color-light-on-dark();
+}
+.crop-color-brown {
+  fill:       @brown;
+  stroke:     @brown;
+  background: @brown;
+  .crop-color-light-on-dark();
+}
+.crop-color-dark-brown {
+  fill:       @dark-brown;
+  stroke:     @dark-brown;
+  background: @dark-brown;
+  .crop-color-light-on-dark();
+}
+.crop-color-orange {
+  fill:       @orange;
+  stroke:     @orange;
+  background: @orange;
+  .crop-color-light-on-dark();
+}
+.crop-color-yellow {
+  fill:       @yellow;
+  stroke:     @yellow;
+  background: @yellow;
+  .crop-color-dark-on-light();
+}
+.crop-color-light-green {
+  fill:       @light-green;
+  stroke:     @light-green;
+  background: @light-green;
+  .crop-color-light-on-dark();
+}
+.crop-color-green {
+  fill:       @green;
+  stroke:     @green;
+  background: @green;
+  .crop-color-light-on-dark();
+}
+.crop-color-dark-green {
+  fill:       @dark-green;
+  stroke:     @dark-green;
+  background: @dark-green;
+  .crop-color-light-on-dark();
+}
+.crop-color-blue {
+  fill:       @blue;
+  stroke:     @blue;
+  background: @blue;
+  .crop-color-light-on-dark();
+}
+.crop-color-dark-purple {
+  fill:       @dark-purple;
+  stroke:     @dark-purple;
+  background: @dark-purple;
+  .crop-color-light-on-dark();
+}
+.crop-color-black {
+  fill:       @smoke-30;
+  stroke:     @smoke-30;
+  background: @smoke-30;
+  .crop-color-light-on-dark();
+}
+.crop-color-gray {
+  fill:       @smoke-30;
+  stroke:     @smoke-30;
+  background: @smoke-30;
+  .crop-color-light-on-dark();
+}
+.crop-color-none {
+  fill:       @smoke-30;
+  stroke:     @smoke-30;
+  background: @smoke-30;
+  .crop-color-light-on-dark();
+}
+
+
+/////////////////////////////////////
+//////////// TEXT COLORS ////////////
+/////////////////////////////////////
+
+// similar to background colors (aka crop colors)
+// a way to make text a certain color anywhere in the app
+
+.text-color-light-red {
+  color: @light-red;
+}
+.text-color-red {
+  color: @red;
+}
+.text-color-dark-red {
+  color: @dark-red;
+}
+.text-color-red-orange {
+  color: @red-orange;
+}
+.text-color-orange {
+  color: @orange;
+}
+.text-color-light-yellow {
+  color: @light-yellow;
+}
+.text-color-yellow {
+  color: @yellow;
+}
+.text-color-light-green {
+  color: @light-green;
+}
+.text-color-green {
+  color: @green;
+}
+.text-color-dark-green {
+  color: @dark-green;
+}
+.text-color-light-blue {
+  color: @light-blue;
+}
+.text-color-blue {
+  color: @blue;
+}
+.text-color-dark-blue {
+  color: @dark-blue;
+}
+.text-color-purple {
+  color: @purple;
+}
+.text-color-dark-purple {
+  color: @dark-purple;
+}
+
+
+// neutrals
+.text-color-light-tan {
+  color: @light-tan;
+}
+.text-color-tan {
+  color: @tan;
+}
+.text-color-dark-tan {
+  color: @dark-tan;
+}
+.text-color-light-brown {
+  color: @light-brown;
+}
+.text-color-brown {
+  color: @brown;
+}
+.text-color-dark-brown {
+  color: @dark-brown;
+}
+
+
+
+/////////////////////////////////////
+////////// NAMED UI COLORS //////////
+/////////////////////////////////////
+
+// *semantic* color variables to describe things like
+// the colors that text and separators should be
+// use these colors for text where possible
+
+// color for <hr>s, page separators, table borders, etc
+@separator-color:        @smoke-90;
+
+// dark default text color
+@text-color-primary:     @smoke-40;
+@text-color-secondary:   @smoke-60;
+@text-color-tertiary:    @smoke-80;
+
+// map stuff
+// TODO - refactor once we're ready to do a color update
+@map-detail-dark-overlay: darken(@clear-smoke-90, 8%);
+
+
+
+/////////////////////////////////////
+////////// ACTIVITY COLORS //////////
+/////////////////////////////////////
+
+// color variables for field activities
+// TODO: deprecate this, activities should have no color id
+
+@plantingColor    : lighten(@green, 5%);
+@harvestColor     : @orange;
+@statusColor      : @smoke-80;
+@tillingColor     : @brown;
+@irrigationColor  : @blue;
+@sprayingColor    : @light-blue;
+@fertilizingColor : darken(@green, 5%);

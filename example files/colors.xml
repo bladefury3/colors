@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+  <color name="c1">#6B2E6B</color>
+  <color name="c2">#CC4033</color>
+  <color name="c3">#F56B3D</color>
+  <color name="c4">#F5993D</color>
+  <color name="c5">#FEE067</color>
+  <color name="c6">#70C285</color>
+  <color name="c7">#45A15C</color>
+  <color name="c8">#2E6B3D</color>
+ 
+  <color name="imagery_gradient_default_1">#fffeea9a</color>
+  <color name="imagery_gradient_default_2">#ff70c285</color>
+  <color name="imagery_gradient_default_3">#ff45a15c</color>
+  <color name="imagery_gradient_default_4">#ff2e6b3d</color>
+ 
+  <color name="imagery_gradient_overall_1">#ffbed9f4</color>
+  <color name="imagery_gradient_overall_2">#ff7db3e8</color>
+  <color name="imagery_gradient_overall_3">#ff2680d9</color>
+  <color name="imagery_gradient_overall_4">#ff1b5998</color>
+ 
+  <!--The color of all colors-->
+  <color name="selected_green">#FF275b34</color>
+  <color name="selected_blue">#FF2069B3</color>
+ 
+  <!--Roy G Biv-->
+  <color name="light_red">#fff5b1a3</color>
+  <color name="red">#ffe06952</color>
+  <color name="dark_red">#ffcc4c33</color>
+  <color name="red_orange">#fff56b3d</color>
+  <color name="orange">#fff5993d</color>
+  <color name="yellow">#fffee067</color>
+  <color name="light_yellow">#fffeea9a</color>
+  <color name="light_green">#ff70c285</color>
+  <color name="green">#ff45a15c</color>
+  <color name="dark_green">#ff2e6b3d</color>
+  <color name="light_blue">#ff7db2e8</color>
+  <color name="blue">#ff267fd9</color>
+  <color name="dark_blue">#ff174c82</color>
+  <color name="purple">#ffa659a6</color>
+  <color name="dark_purple">#ff6b2e6b</color>
+ 
+  <color name="darker_green">#ff2e6b3d</color>
+  <color name="farmlogs_green">#ff45a15c</color>
+  <color name="farmlogs_green_trans">#8045a15c</color>
+  <color name="white">#ffffffff</color>
+  <color name="black">@color/smoke_10</color>
+ 
+  <!--Browns-->
+  <color name="light_tan">#fff1ebe4</color>
+  <color name="tan">#ffe4d9cd</color>
+  <color name="dark_tan">#ffb8997a</color>
+  <color name="light_brown">#ff957350</color>
+  <color name="brown">#ff634d36</color>
+  <color name="dark_brown">#ff423324</color>
+ 
+  <!--Neutrals-->
+  <color name="smoke_99">#fffcfcfd</color>
+  <color name="smoke_98">#fff9fafa</color>
+  <color name="smoke_97">#fff7f7f8</color>
+  <color name="smoke_96">#fff4f4f6</color>
+  <color name="smoke_95">#fff1f2f4</color>
+  <color name="smoke_94">#ffeeeff1</color>
+  <color name="smoke_93">#ffebedef</color>
+  <color name="smoke_92">#ffe9eaed</color>
+  <color name="smoke_91">#ffe6e7ea</color>
+  <color name="smoke_90">#ffe3e5e8</color>
+  <color name="smoke_80">#ffc7cad1</color>
+  <color name="smoke_70">#ffabb0ba</color>
+  <color name="smoke_65">#ff98a6b3</color>
+  <color name="smoke_60">#ff8f96a3</color>
+  <color name="smoke_50">#ff737b8c</color>
+  <color name="smoke_40">#ff5c6370</color>
+  <color name="smoke_30">#ff454a54</color>
+  <color name="smoke_25">#ff31404e</color>
+  <color name="smoke_20">#ff2e3138</color>
+  <color name="smoke_10">#ff17191c</color>
+ 
+  <!-- Translucent Dark-->
+  <color name="clear_smoke_90">#e62e3138</color>
+  <color name="clear_smoke_80">#cc2e3138</color>
+  <color name="clear_smoke_70">#b32e3138</color>
+  <color name="clear_smoke_60">#992e3138</color>
+  <color name="clear_smoke_50">#802e3138</color>
+  <color name="clear_smoke_40">#662e3138</color>
+  <color name="clear_smoke_30">#4d2e3138</color>
+  <color name="clear_smoke_20">#332e3138</color>
+  <color name="clear_smoke_15">#262e3138</color>
+  <color name="clear_smoke_10">#1a2e3138</color>
+  <color name="clear_smoke_09">#172e3138</color>
+  <color name="clear_smoke_08">#142e3138</color>
+  <color name="clear_smoke_07">#122e3138</color>
+  <color name="clear_smoke_06">#0f2e3138</color>
+  <color name="clear_smoke_05">#0d2e3138</color>
+  <color name="clear_smoke_04">#0a2e3138</color>
+  <color name="clear_smoke_03">#082e3138</color>
+  <color name="clear_smoke_02">#052e3138</color>
+  <color name="clear_smoke_01">#032e3138</color>
+ 
+  <!--Translucent Light-->
+  <color name="clear_white_90">#e6ffffff</color>
+  <color name="clear_white_80">#ccffffff</color>
+  <color name="clear_white_70">#b3ffffff</color>
+  <color name="clear_white_60">#99ffffff</color>
+  <color name="clear_white_50">#80ffffff</color>
+  <color name="clear_white_40">#66ffffff</color>
+  <color name="clear_white_30">#4dffffff</color>
+  <color name="clear_white_20">#33ffffff</color>
+  <color name="clear_white_10">#1affffff</color>
+  <color name="clear_white_09">#17ffffff</color>
+  <color name="clear_white_08">#14ffffff</color>
+  <color name="clear_white_07">#12ffffff</color>
+  <color name="clear_white_06">#0fffffff</color>
+  <color name="clear_white_05">#0dffffff</color>
+  <color name="clear_white_04">#0affffff</color>
+  <color name="clear_white_03">#08ffffff</color>
+  <color name="clear_white_02">#05ffffff</color>
+  <color name="clear_white_01">#03ffffff</color>
+ 
+  <!--Transparent-->
+  <color name="transparent">#00000000</color>
+ 
+  <!--Application-specific-->
+  <color name="text_primary">@color/smoke_30</color>
+  <color name="text_secondary">@color/smoke_60</color>
+  <color name="text_tertiary">@color/smoke_80</color>
+  <color name="text_label">@color/smoke_60</color>
+  <color name="list_divider">@color/smoke_94</color>
+ 
+  <!--Modified colors-->
+  <color name="clear_light_blue_10">#1A7DB2E8</color>
+  <color name="golden">#ffffe099</color>
+ 
+  <!-- Crop Colors -->
+  <color name="crop_color_light_red_bg">@color/light_red</color>
+  <color name="crop_color_red_bg">@color/red</color>
+  <color name="crop_color_dark_red_bg">@color/dark_red</color>
+  <color name="crop_color_red_orange_bg">@color/red_orange</color>
+  <color name="crop_color_orange_bg">@color/orange</color>
+  <color name="crop_color_yellow_bg">@color/yellow</color>
+  <color name="crop_color_light_green_bg">@color/light_green</color>
+  <color name="crop_color_green_bg">@color/green</color>
+  <color name="crop_color_dark_green_bg">@color/dark_green</color>
+  <color name="crop_color_light_blue_bg">@color/light_blue</color>
+  <color name="crop_color_blue_bg">@color/blue</color>
+  <color name="crop_color_dark_blue_bg">@color/dark_blue</color>
+  <color name="crop_color_purple_bg">@color/purple</color>
+  <color name="crop_color_dark_purple_bg">@color/dark_purple</color>
+  <color name="crop_color_darker_green_bg">@color/darker_green</color>
+  <color name="crop_color_farmlogs_green_bg">@color/farmlogs_green</color>
+  <color name="crop_color_white_bg">@color/smoke_94</color>
+  <color name="crop_color_black_bg">@color/smoke_30</color>
+  <color name="crop_color_light_tan_bg">@color/light_tan</color>
+  <color name="crop_color_tan_bg">@color/tan</color>
+  <color name="crop_color_dark_tan_bg">@color/dark_tan</color>
+  <color name="crop_color_light_brown_bg">@color/light_brown</color>
+  <color name="crop_color_brown_bg">@color/brown</color>
+  <color name="crop_color_dark_brown_bg">@color/dark_brown</color>
+ 
+  <color name="crop_color_light_red_fg">@color/crop_badge_text_light_dark</color>
+  <color name="crop_color_red_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_dark_red_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_red_orange_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_orange_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_yellow_fg">@color/crop_badge_text_light_dark</color>
+  <color name="crop_color_light_green_fg">@color/crop_badge_text_dark</color>
+  <color name="crop_color_green_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_dark_green_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_light_blue_fg">@color/crop_badge_text_dark</color>
+  <color name="crop_color_blue_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_dark_blue_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_purple_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_dark_purple_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_darker_green_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_farmlogs_green_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_white_fg">@color/crop_badge_text_light_dark</color>
+  <color name="crop_color_black_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_light_tan_fg">@color/crop_badge_text_light_dark</color>
+  <color name="crop_color_tan_fg">@color/crop_badge_text_light_dark</color>
+  <color name="crop_color_dark_tan_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_light_brown_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_brown_fg">@color/crop_badge_text_light</color>
+  <color name="crop_color_dark_brown_fg">@color/crop_badge_text_light</color>
+ 
+  <color name="adapter_card_shadow_step_0">@color/smoke_98</color>
+  <color name="adapter_card_shadow_step_1">@color/smoke_97</color>
+  <color name="adapter_card_shadow_step_2">@color/smoke_96</color>
+  <color name="adapter_card_shadow_step_3">@color/smoke_95</color>
+  <color name="adapter_card_shadow_step_4">@color/smoke_70</color>
+ 
+  <!-- Crop Badges-->
+  <color name="crop_badge_text_light">@color/smoke_94</color>
+  <color name="crop_badge_text_dark">@color/smoke_30</color>
+  <color name="crop_badge_text_light_dark">@color/smoke_40</color>
+ 
+  <!-- Material Button Colors -->
+  <color name="material_button_shadow_step_0">@android:color/transparent</color>
+  <color name="material_button_shadow_step_1">@color/clear_smoke_01</color>
+  <color name="material_button_shadow_step_2">@color/clear_smoke_04</color>
+  <color name="material_button_shadow_step_3">#12171A1C</color>
+  <color name="material_button_shadow_step_4">#14171A1C</color>
+  <color name="material_button_shadow_step_5">#17171A1C</color>
+  <color name="material_button_shadow_step_6">@color/clear_smoke_10</color>
+  <color name="selected_primary">@color/smoke_92</color>
+ 
+  <!-- Extra Colors -->
+  <color name="translucent_black">#b2000000</color>
+  <color name="nav_item_selected">#ff2b3945</color>
+ 
+  <!-- Rainfall -->
+  <color name="rainfall_brush">#80267fd9</color>
+  <color name="scrubber_indicator">@color/text_secondary</color>
+ 
+  <color name="add_field_toolbar">#f22e3138</color>
+  <color name="add_field_status_bar">#ff2e3138</color>
+ 
+  <!-- Nitrogen -->
+  <color name="nitrogen_highlight">#666DC383</color>
+ 
+</resources>
