@@ -13,10 +13,9 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
 	<style type="text/css">
-	pre {
-    	white-space: pre-wrap;
-	}
+	
 	</style>
 </head>
 <body>
@@ -34,6 +33,10 @@
 						</div>
 						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 							<pre><code id="iOS"></code> </pre>
+							<button type="button" class="btn btn-secondary" data-clipboard-target="#iOS">
+							    Copy
+							</button>
+
 						</div>
 					</div>
 					<div class="panel panel-default">
@@ -46,18 +49,24 @@
 						</div>
 						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 							<pre><code id="android"></code></pre>
+							<button type="button" class="btn btn-secondary" data-clipboard-target="#android">
+							    Copy
+							</button>
 						</div>
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingThree">
 							<h4 class="panel-title">
 								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Web
-								</a>
+									Web								
+								</a>								
 							</h4>
 						</div>
 						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 							<pre><code id="web"></code> </pre>
+							<button type="button" class="btn btn-secondary" data-clipboard-target="#web">
+							    	Copy
+							</button>
 						</div>
 					</div>
 					<div class="panel panel-default">
