@@ -1,5 +1,6 @@
 $(function() {
-	$.getJSON("colors.json", function(json) {    
+	$.getJSON("colors.json", function(json) { 
+		$('#colors').html(renderColors(json));
 		$('#iOS').html(iOSCode(json));
 		$('#android').html(androidCode(json));
 		$('#web').html(webCode(json));
@@ -48,6 +49,15 @@ $(function() {
 	}	
 
 	new Clipboard('.btn');
+
+	function renderColors(json){
+		var render = '';
+		$.each(json, function(i, item) {		
+			color = '<div class="color" title="' + i + '"><div class="colorPreview" style="background-color: #' + item + '"></div><div class="colorInfo"><div class="colorName">' +  i + '</div><div class="colorHex">#' + item + '</div></div></div>';			
+			render += color;
+		});	
+		return render;
+	}
 });
 
 

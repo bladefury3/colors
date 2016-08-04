@@ -15,73 +15,132 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
 	<style type="text/css">
-	
+	*{
+		margin: 0;
+		padding: 0;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		border-radius: 0;
+		font-family: Roboto, Helvetica, sans-serif;
+		font-weight: normal;
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: transparent;
+	}
+	.colorPalette{
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 6px 0 24px;
+	}
+	.color{
+		display: flex;
+		width: 260px;
+		height: 102px;
+		padding: 12px 6px 26px 0;
+	}
+	.colorPreview{
+		position: relative;
+		width: 60px;
+		height: 60px;
+		margin-right: 18px;
+		border-radius: 50%;
+		border: 2px solid rgba(0, 0, 0, 0.15);
+	}
+	.colorPreview::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: #fff;
+		background-image: linear-gradient(45deg, #dddadc 25%, transparent 25%, transparent 75%, #dddadc 75%, #dddadc), linear-gradient(45deg, #dddadc 25%, transparent 25%, transparent 75%, #dddadc 75%, #dddadc);
+		background-size: 12px 12px;
+		background-position: 0 0, 6px 6px;
+		z-index: -1;
+	}
+	.colorName{
+		width: 176px;
+		margin-bottom: 8px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		line-height: 19px;
+		font-size: 16px;
+		color: #574751;
+		color: var(--maroon);
+	}
+	.colorHex{
+		margin-bottom: 2px;
+		line-height: 19px;
+		font-size: 16px;
+		color: #bcb5b9;
+		color: var(--warm-gray);
+	}
 	</style>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<div id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									iOS
-								</a>
-							</h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-							<pre><code id="iOS"></code> </pre>
-							<button type="button" class="btn btn-secondary" data-clipboard-target="#iOS">
-							    Copy
-							</button>
-
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwo">
-							<h4 class="panel-title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Android
-								</a>
-							</h4>
-						</div>
-						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-							<pre><code id="android"></code></pre>
-							<button type="button" class="btn btn-secondary" data-clipboard-target="#android">
-							    Copy
-							</button>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Web								
-								</a>								
-							</h4>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-							<pre><code id="web"></code> </pre>
-							<button type="button" class="btn btn-secondary" data-clipboard-target="#web">
-							    	Copy
-							</button>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									Sketch File
-								</a>
-							</h4>
-						</div>
-						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-							<a id="downloadSketch" href="#" download="farmlogs-all.sketchpalette">Download</a>
-						</div>
+			<h1 class="display-4">FarmLogs Color Guide v0.1</h1>
+			<h2 class="display-4">Download Code</h2>
+				<p>
+					<a class="btn btn-primary" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						iOS
+					</a>
+					<a class="btn btn-primary" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Android
+					</a>
+					<a class="btn btn-primary" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Web
+					</a>
+					<a class="btn btn-primary" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						Sketch Palette
+					</a>
+					
+				</p>
+				<div class="collapse" id="collapseOne">
+					<div class="card card-block">
+						<button type="button" class="btn btn-link" data-clipboard-target="#iOS">
+							Copy
+						</button>
+						
+						<pre><code id="iOS"></code> </pre>
+						
 					</div>
 				</div>
+				<div class="collapse" id="collapseTwo">
+					<div class="card card-block">
+						<button type="button" class="btn btn-link" data-clipboard-target="#android">
+							Copy
+						</button>
+						<pre><code id="android"></code></pre>
+						
+					</div>
+				</div>
+				<div class="collapse" id="collapseThree">
+					<div class="card card-block">
+						<button type="button" class="btn btn-link" data-clipboard-target="#web">
+							Copy
+						</button>
+						<pre><code id="web"></code> </pre>
+						
+					</div>
+				</div>
+				<div class="collapse" id="collapseFour">
+					<div class="card card-block">
+						<a id="downloadSketch" href="#" download="farmlogs-all.sketchpalette">Download</a>					
+					</div>
+				</div>
+				<h1 class="display-4">Colors</h1>
+				<div id="colors" class="colorPalette">
+				</div>				
+
+				
 			</div>
 		</div>
 	</div>
